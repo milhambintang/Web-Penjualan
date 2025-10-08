@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const penjualanRoutes = require('./routes/penjualanRoutes');
+const penjualanRoutes = require('../dashboard/routes/penjualanRoutes');
 
 const app = express();
 const PORT = 3000;

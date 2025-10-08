@@ -1,4 +1,4 @@
-const penjualan = require('./models/penjualanModel');
+const penjualan = require('../models/penjualanModel');
 
 class PenjualanController {
   static getAll(req, res) {
