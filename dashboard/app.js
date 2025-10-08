@@ -2,12 +2,20 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = 3000;
+// const penjualanRoutes=require('./routes/penjualanRoutes');
 
 // Tambahkan ini
 const products = [];
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+// app.use(bodyParser.json());
+// app.use('/penjualan', penjualanRoutes);
+
+// app.get('/', (req, res) => {
+//   res.send("Aplikasi Penjualan Sederhana - MVC (Model Array)");
+// })
 
 app.use(express.urlencoded({ extended: true }));
 // Middleware untuk membaca file statis
