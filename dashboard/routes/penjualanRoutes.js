@@ -4,7 +4,7 @@ const PenjualanController = require('../controllers/penjualanController');
 
 //routes
 router.get('/', PenjualanController.getAll);
-router.get('/', PenjualanController.getById);
+router.get('/:id', PenjualanController.getById);
 router.post('/', PenjualanController.create);
 router.put('/:id',PenjualanController.update);
 router.delete(':id', PenjualanController.delete);
